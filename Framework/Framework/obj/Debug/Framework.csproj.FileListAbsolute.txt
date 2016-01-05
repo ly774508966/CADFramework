@@ -1,5 +1,4 @@
 E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\Debug\Enesy.CAD.Framework.dll
 E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\Debug\Enesy.CAD.Framework.pdb
-E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\Debug\Enesy.CAD.Framework.dll
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\Debug\Enesy.CAD.Framework.pdb

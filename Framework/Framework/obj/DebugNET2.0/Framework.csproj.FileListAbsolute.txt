@@ -1,0 +1,5 @@
+E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET2.0\Enesy.CAD.Framework.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET2.0\Enesy.CAD.Framework.pdb
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Framework.csprojResolveAssemblyReference.cache
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framework.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framework.pdb

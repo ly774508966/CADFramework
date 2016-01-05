@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnesyCAD2007
+namespace Enesy.CAD.Utilities
 {
     public class Class1
     {

@@ -1,0 +1,5 @@
+E:\Projects\enesy\CAD\CAD\Framework\Enesy.CAD.Utilities\bin\Debug\Enesy.CAD.Utilities.dll
+E:\Projects\enesy\CAD\CAD\Framework\Enesy.CAD.Utilities\bin\Debug\Enesy.CAD.Utilities.pdb
+E:\Projects\enesy\CAD\CAD\Framework\Enesy.CAD.Utilities\obj\Debug\Enesy.CAD.Utilities.csprojResolveAssemblyReference.cache
+E:\Projects\enesy\CAD\CAD\Framework\Enesy.CAD.Utilities\obj\Debug\Enesy.CAD.Utilities.dll
+E:\Projects\enesy\CAD\CAD\Framework\Enesy.CAD.Utilities\obj\Debug\Enesy.CAD.Utilities.pdb
