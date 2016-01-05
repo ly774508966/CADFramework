@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA416924-5FF4-4796-81D1-B2461D6444B2}</ProjectGuid>
+    <ProjectGuid>{BA662C17-6FC9-4AF2-A8E7-48EBE141871F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Enesy.CAD.Framework</RootNamespace>
-    <AssemblyName>Enesy.CAD.Framework</AssemblyName>
+    <RootNamespace>EnesyCAD2007</RootNamespace>
+    <AssemblyName>EnesyCAD2007</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -37,10 +37,6 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enesy.CAD.Framework.Controls\" />
-    <Folder Include="Enesy.CAD.Framework\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

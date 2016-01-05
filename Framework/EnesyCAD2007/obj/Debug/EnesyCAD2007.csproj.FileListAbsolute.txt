@@ -1,0 +1,4 @@
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\EnesyCAD2007.dll
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\EnesyCAD2007.pdb
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.dll
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.pdb
