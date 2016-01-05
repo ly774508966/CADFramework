@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace EnesyCAD2007.Test
+namespace Enesy.CAD.Framework.Enesy.CAD.Framework.Controls
 {
-    public partial class Form1 : Form
+    public partial class TestYoutube : Dialog
     {
-        public Form1()
+        public TestYoutube()
         {
             InitializeComponent();
         }

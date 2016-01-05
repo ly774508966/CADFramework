@@ -71,16 +71,35 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Enesy.CAD.Commands\Test.cs" />
-    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\ButtonNoBorder.cs">
+    <Compile Include="Enesy.CAD.Framework.Controls\ButtonNoBorder.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\TextBoxOwnerDraw.cs">
+    <Compile Include="Enesy.CAD.Framework.Controls\CommandListManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\CommandListManager.Designer.cs">
+      <DependentUpon>CommandListManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\IDialog.cs" />
+    <Compile Include="Enesy.CAD.Framework.Controls\TestYoutube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\TestYoutube.Designer.cs">
+      <DependentUpon>TestYoutube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\TextBoxOwnerDraw.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\TextBoxWithHeigh.cs">
+    <Compile Include="Enesy.CAD.Framework.Controls\TextBoxWithHeigh.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\ToolStripTextBoxOwnerDraw.cs">
+    <Compile Include="Enesy.CAD.Framework.Controls\ToolStripTextBoxOwnerDraw.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Enesy.CAD.Framework.Runtime\CommandMethod.cs" />
@@ -96,6 +115,12 @@
     <Folder Include="Test\TestForm\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Enesy.CAD.Framework.Controls\CommandListManager.resx">
+      <DependentUpon>CommandListManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enesy.CAD.Framework.Controls\TestYoutube.resx">
+      <DependentUpon>TestYoutube.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
@@ -403,6 +428,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\youtubeOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

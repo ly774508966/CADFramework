@@ -6,7 +6,7 @@ using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Enesy.CAD.Framework.Controls
+namespace AutoCADpzo.Framework.Controls
 {
     public partial class TextBoxOwnerDraw : Panel, INotifyPropertyChanged
     {
@@ -18,9 +18,10 @@ namespace Enesy.CAD.Framework.Controls
         private int cornerRadius = 0;
         private Color borderColor = Color.Transparent;
         private int borderSize = 0;
-        private Size preferredSize = new Size(300, 25);
+        private Size preferredSize = new Size(305, 30);
 
         public event FilterDataSearchEventHandler FilterCommand;
+        public event SearchBoxSearchEventHandler Search;
         
         public string StringToFilter = "";
 
@@ -131,7 +132,7 @@ namespace Enesy.CAD.Framework.Controls
             filterButton.FlatAppearance.BorderSize = 0;
             filterButton.Size = new Size(33, pn.Height);
             //filterButton.Text = "Columns";
-            filterButton.Image = Framework.Resource.Filter;
+            filterButton.Image = Enesy.CAD.Framework.Resource.Filter;
             filterButton.ImageAlign = ContentAlignment.MiddleLeft;
             //filterButton.Location = new Point(0, preferredSize.Height / 2 - filterButton.Height/2);
             filterButton.Click += filterButton_Click;
@@ -146,7 +147,7 @@ namespace Enesy.CAD.Framework.Controls
             SearchButton.FlatAppearance.BorderSize = 0;
             SearchButton.Size = new Size(30, pn.Height);
             //SearchButton.Location = new Point(MyTextBox.Left + MyTextBox.Width, preferredSize.Height / 2 - filterButton.Height / 2);
-            SearchButton.Image = Framework.Resource.SearchButtonDisable;
+            SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonDisable;
             SearchButton.ImageAlign = ContentAlignment.MiddleCenter;
             SearchButton.Click += SearchButton_Click;
             //SearchButton.MouseHover += SearchButton_MouseHover;
@@ -266,9 +267,9 @@ namespace Enesy.CAD.Framework.Controls
             this.SearchButton.Enabled = this.MyTextBox.TextLength > 0 && this.MyTextBox.Text != SearchWaterMark;
 
             if(this.MyTextBox.TextLength > 0 && this.MyTextBox.Text != SearchWaterMark)
-                SearchButton.Image = Framework.Resource.SearchButtonHover;
+                SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonHover;
             else
-                SearchButton.Image = Framework.Resource.SearchButtonDisable;
+                SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonDisable;
 
             //
             this.StringToFilter = this.MyTextBox.Text;
@@ -297,22 +298,22 @@ namespace Enesy.CAD.Framework.Controls
 
         private void SearchButton_MouseUp(object sender, MouseEventArgs e)
         {
-            SearchButton.Image = Framework.Resource.SearchButtonHover;
+            SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonHover;
         }
 
         private void SearchButton_MouseLeave(object sender, EventArgs e)
         {
-            SearchButton.Image = Framework.Resource.SearchButtonDisable;
+            SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonDisable;
         }
 
         private void SearchButton_MouseClick(object sender, MouseEventArgs e)
         {
-            SearchButton.Image = Framework.Resource.SearchButtonPressed;
+            SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonPressed;
         }
 
         private void SearchButton_MouseHover(object sender, EventArgs e)
         {
-            SearchButton.Image = Framework.Resource.SearchButtonHover;
+            SearchButton.Image = Enesy.CAD.Framework.Resource.SearchButtonHover;
         }
 
         private void filterButton_Click(object sender, EventArgs e)

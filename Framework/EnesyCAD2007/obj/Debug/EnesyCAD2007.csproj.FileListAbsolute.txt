@@ -1,7 +1,9 @@
 E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\Enesy.CAD.Framework.dll
 E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\Enesy.CAD.Framework.pdb
 E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.csprojResolveAssemblyReference.cache
-E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.Test.Form1.resources
-E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.csproj.GenerateResource.Cache
 E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.dll
 E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\obj\Debug\EnesyCAD2007.pdb
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\EnesyCAD2007.dll
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\EnesyCAD2007.pdb
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\Projects\enesy\CAD\CAD\Framework\EnesyCAD2007\bin\Debug\Interop.ShockwaveFlashObjects.dll

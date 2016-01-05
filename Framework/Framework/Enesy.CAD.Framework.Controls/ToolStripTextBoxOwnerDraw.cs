@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Enesy.CAD.Framework.Controls
+namespace AutoCADpzo.Framework.Controls
 {
     public partial class ToolStripTextBoxOwnerDraw : ToolStripControlHost
     {

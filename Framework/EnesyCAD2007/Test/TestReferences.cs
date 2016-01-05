@@ -22,7 +22,10 @@ namespace EnesyCAD2007.Test
         [EnesyCADCommandMethod(globalName: "TESTFORM", Description = "Just test", Author = "Enesy.vn", Email = "congnv@enesy.vn")]
         public void TestCallMethod()
         {
-          
+            //TestForm.Form1 f = new TestForm.Form1();
+            //f.Show();
+            Enesy.CAD.Framework.Enesy.CAD.Framework.Controls.TestYoutube t = new Enesy.CAD.Framework.Enesy.CAD.Framework.Controls.TestYoutube();
+            t.Show();
         }
     }
 }

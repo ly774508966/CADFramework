@@ -6,3 +6,10 @@ E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framewor
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Framework.csproj.GenerateResource.Cache
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framework.dll
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framework.pdb
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framework.CommandListManager.resources
+E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET2.0\Interop.ShockwaveFlashObjects.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET2.0\AxInterop.ShockwaveFlashObjects.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Interop.ShockwaveFlashObjects.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\AxInterop.ShockwaveFlashObjects.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Framework.csproj.ResolveComReference.cache
+E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET2.0\Enesy.CAD.Framework.Enesy.CAD.Framework.Controls.TestYoutube.resources

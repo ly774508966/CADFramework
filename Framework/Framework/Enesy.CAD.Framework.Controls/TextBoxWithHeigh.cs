@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Enesy.CAD.Framework.Controls
+namespace AutoCADpzo.Framework.Controls
 {
     public class TextBoxWithHeight : TextBox
     {
