@@ -2,3 +2,5 @@ E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET4.0\Enesy.CAD.Framewor
 E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET4.0\Enesy.CAD.Framework.pdb
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET4.0\Enesy.CAD.Framework.dll
 E:\Projects\enesy\CAD\CAD\Framework\Framework\obj\DebugNET4.0\Enesy.CAD.Framework.pdb
+E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET4.0\AcDbMgd.dll
+E:\Projects\enesy\CAD\CAD\Framework\Framework\bin\DebugNET4.0\AcMgd.dll

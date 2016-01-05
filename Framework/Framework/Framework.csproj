@@ -11,6 +11,8 @@
     <AssemblyName>Enesy.CAD.Framework</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugNET2.0|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -35,9 +39,10 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-	<TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugNET4.0|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -45,32 +50,359 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-	<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcDbMgd">
       <HintPath>..\References\2007\AcDbMgd.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="AcMgd">
       <HintPath>..\References\2007\AcMgd.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Enesy.CAD.Commands\Test.cs" />
+    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\ButtonNoBorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\TextBoxOwnerDraw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\TextBoxWithHeigh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enesy.CAD.Framework.Controls\SearchBox\ToolStripTextBoxOwnerDraw.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Enesy.CAD.Framework.Runtime\CommandMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Enesy.CAD.Framework.Controls\" />
     <Folder Include="Enesy.CAD.Framework\" />
+    <Folder Include="Test\TestForm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addSmall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approveOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\begin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigArrowFilled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeDirection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domain1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebookOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filterOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\focus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\focus16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hideOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lanscape32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newDocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomalArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pickpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pickPoint2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portrait32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButtonDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButtonHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButtonPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchHoverOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectPline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triAngle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriAngle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCS.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\websiteOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\written.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtubeOK.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

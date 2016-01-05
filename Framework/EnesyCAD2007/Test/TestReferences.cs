@@ -19,10 +19,10 @@ namespace EnesyCAD2007.Test
         }
 
         // Test call a method with 2 parameters from reference assembly
-        [EnesyCADCommandMethod(globalName: "CALLMETHOD", Description = "Just test", Author = "Enesy.vn", Email = "congnv@enesy.vn")]
+        [EnesyCADCommandMethod(globalName: "TESTFORM", Description = "Just test", Author = "Enesy.vn", Email = "congnv@enesy.vn")]
         public void TestCallMethod()
         {
-            Enesy.CAD.Framework.Enesy.CAD.Commands.Test.AA("string1", "string2");
+          
         }
     }
 }
